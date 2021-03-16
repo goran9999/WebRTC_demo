@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+#main-div{
+    display: inline;
+}
+#active-room{
+    background-color: beige;
+    width: 200px;
+    height: 30px;
+}
+#active-meetings{
+    display: inline;
+}
+#video-div{
+    display: inline;
+}
