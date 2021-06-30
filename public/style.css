@@ -1,17 +1,249 @@
 body{
     margin: 0;
 }
-#main-div{
+/*#main-div{
     display: inline;
-}
+}*/
 #active-room{
     background-color: beige;
+    margin-top: 50px;
     width: 200px;
-    height: 30px;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
 }
 #active-meetings{
-    display: inline;
+   /* display: inline;*/
+   display: flex;
+   justify-content: center;
+}
+#join{
+    margin-left: 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+ul{
+    
+    
 }
 #video-div{
-    display: inline;
+    display: none;
+    grid-auto-flow: row;
+    grid-template-columns: 200px 350px 350px;
+    margin-top: 0;
+    margin-left: 150px;
+    /*border:5px solid black;*/
+    border-radius: 10px;
+    width: 910px;
+    margin-top: 50px;
+    word-break: break-all; 
+    margin-bottom: 25px;
+}
+#peer-videos{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns:350px 350px;
+    margin-top: 0;
+    border-radius: 10px;
+    width: 700px;
+    word-break: break-all; 
+}
+
+
+#myVideo{
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-top: -25px;
+    border: 0px 0px 3px 3px solid #00bf03;
+
+}
+#video-chat-lobby{
+    display: grid;
+    grid-template-rows: 2;
+    width: 600px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 790px;
+    border: 1px solid black;
+}
+#roomInput{
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 45px;
+}
+#create{
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 0px;
+    background-color:#00bf03;
+    border-radius: 10px;
+    color:black;
+}
+#header{
+    margin-top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: black;
+    height: 80px;
+}
+#close-room{
+    float: left;
+}
+#videoButtons{
+    display: inline-block;
+    margin-left: 500px;
+    margin-top: 60px;
+    padding: 0;
+}
+#hang-up{
+    width:60px;
+    height: 40px;
+   
+}
+#cameraOff{
+height: 40px;
+width: 100px;
+}
+#username-div{
+    display: grid;
+    grid-template-rows: 2;
+    margin-top: 200px;
+    margin-left: 110px;
+    width:600px;
+    height:200px;
+    border: 1px solid black;
+    
+}
+#save{
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 0px;
+    background-color:#00bf03;
+    border-radius: 10px;
+    color:black;
+}
+#username{
+    width: 400px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 45px;
+    
+}
+#chat-div{
+    display: grid;
+    grid-template-rows: 3;
+    margin-left: 1000px;
+    width: 250px;
+    height:450px;
+    margin-top:-260px;
+    margin-left: 1160px;
+    position: fixed;
+    top: sticky;
+   
+}
+#chat{
+    height: 500px;
+    width: 350px;
+    border:1px solid black;
+    overflow:auto;
+   
+}
+#message{
+    width: 350px;
+    height: 20px;
+}
+#send{
+    height: 25px;
+    width: 355px;
+}
+#text{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1;
+    margin-left:auto;
+    background-color: #5BC236;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    /*height: auto;
+    width: auto;
+    margin-top:20px;*/
+    border-radius: 18px 18px 0px 18px;
+    display: block;
+    overflow: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 60%;
+    
+}
+li{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+}
+#text2{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1;
+    margin-left:auto;
+    background-color: #919191;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    /*height: auto;
+    width: auto;
+    margin-top:20px;*/
+    border-radius: 18px 18px 18px 0px;;
+    display: block;
+    overflow: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left:0;
+}
+#time{
+    margin-top: 5px;
+    color: black;
+    /*position: absolute;
+   top: 15px;
+    right: 0;
+    font-size: 13px;*/
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-right: 5px;
+}
+#messa{
+    /*width: 270px;
+  height: 100px;
+  color: black;
+  overflow: hidden;
+  height: auto;
+  float: right;
+  margin-right: 5px;*/
+  margin-top: 15px;
+  margin-left: 10px;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+.peerVideo{
+    width: 350px;
+    height: 350px;
+    /*margin-left: -620px;*/
+    margin-right: 0;
+    margin-top:-44px;
+    margin-left: -1px;
+   
+}
+.peerDiv{
+    width: 349px;
+    height: 259px;
+    /*border-right: 3px solid black;
+    border-bottom:3px solid black; ;
+    border-left: 3px solid black;*/
+    margin-left: 5px;
+   
 }
