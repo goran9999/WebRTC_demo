@@ -1,9 +1,7 @@
 body{
     margin: 0;
 }
-/*#main-div{
-    display: inline;
-}*/
+
 #active-room{
     background-color: beige;
     margin-top: 50px;
@@ -22,17 +20,13 @@ body{
     padding: 0.5rem 2rem;
     border-radius: 10px;
 }
-ul{
-    
-    
-}
+
 #video-div{
     display: none;
     grid-auto-flow: row;
     grid-template-columns: 200px 350px 350px;
     margin-top: 0;
     margin-left: 150px;
-    /*border:5px solid black;*/
     border-radius: 10px;
     width: 910px;
     margin-top: 50px;
@@ -89,15 +83,12 @@ ul{
     background-color: black;
     height: 80px;
 }
-#close-room{
-    float: left;
-}
 #videoButtons{
-    display: inline-block;
-    margin-left: 500px;
-    margin-top: 60px;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
+
+
 #hang-up{
     width:60px;
     height: 40px;
@@ -207,23 +198,13 @@ li{
 #time{
     margin-top: 5px;
     color: black;
-    /*position: absolute;
-   top: 15px;
-    right: 0;
-    font-size: 13px;*/
     font-size: 10px;
     color: rgb(0, 0, 0);
     float: right;
     margin-right: 5px;
 }
 #messa{
-    /*width: 270px;
-  height: 100px;
-  color: black;
-  overflow: hidden;
-  height: auto;
-  float: right;
-  margin-right: 5px;*/
+   
   margin-top: 15px;
   margin-left: 10px;
   word-break: break-all;

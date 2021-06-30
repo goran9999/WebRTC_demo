@@ -45,7 +45,6 @@ io.on("connection",function(socket){
                 u="";
             }
         })
-        //socket.broadcast.to(roomName).emit("force-quit",roomName);
         socket.broadcast.emit("force-quit",roomName);
         
     })
